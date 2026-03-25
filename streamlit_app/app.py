@@ -13,7 +13,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    output_dir = Path(r"C:\Users\kmuth\Desktop\healthcare_deserts\outputs")
+    output_dir = Path("outputs")
     df = pd.read_csv(output_dir / "vulnerability_scores.csv")
     return df
 

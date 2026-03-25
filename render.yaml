@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: healthcare-deserts
+    runtime: python
+    buildCommand: pip install -r streamlit_app/requirements.txt
+    startCommand: streamlit run streamlit_app/app.py --server.port $PORT --server.address 0.0.0.0
